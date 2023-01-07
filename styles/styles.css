@@ -1,0 +1,234 @@
+.main-grid {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.login-form {
+    grid-column: 1;
+    background-color: white;
+    align-self: center;
+    width: 430px;
+    padding: 15% 0%;
+    align-self: center;
+    justify-self: center;
+}
+
+.log-im {
+    grid-column: 2;
+    background-image: url(../imgs/untitled-UI-bg.png);
+    height: 100vh;
+    border-radius: 35px 0px 0px 35px;
+    display: grid;
+}
+
+.image-header {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.login-form h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #333;
+    font-size: 260%;
+    margin-bottom: 20px;
+}
+
+.login-form p {
+    color: grey;
+    font-size: 130%;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.google-btn {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border: solid 2px;
+    border-radius: 13px;
+    cursor: pointer;
+    margin: 40px 0px 30px 0px;
+    font-size: larger;
+}
+
+.login-btn {
+    display: block;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.google-btn img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.divider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divider span {
+    background-color: white;
+    padding: 0px 5px;
+}
+
+.divider hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    width: 40%;
+    margin: 0px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    margin: 20px 0px 20px 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.remember label {
+    color: grey;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.forgot {
+    color: black;
+}
+
+.signup {
+    color: black;
+}
+
+.UI-logo-sub {
+    margin-right: 20px;
+}
+
+.UI-head-ss {
+    background-image: url(../imgs/untitled-UI-bg-head.png);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    font-size: 40px;
+    min-width: 440px;
+    border-radius: 0px 0px 300% 300%;
+}
+
+.UI-head-ss span {
+    margin: auto 5px;
+}
+
+.UI-head-ss img {
+    margin: 2% 0%;
+}
+
+
+@media (min-width: 1620px) {
+
+    .UI-head-ss {
+        display: none;
+    }
+
+    .UI-head-ss {
+        display: flex;
+        position: fixed;
+        justify-content: flex-start;
+        top: 0;
+        left: 0;
+        width: 300px;
+        background: transparent;
+        color: black;
+        padding: 15px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1620px) {
+    
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .login-form {
+        width: 430px;
+        padding: 15% 0%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .image-header {
+        font-size: 50px;
+    }
+
+
+    .UI-head-ss {
+        display: flex;
+        position: fixed;
+        justify-content: flex-start;
+        top: 0;
+        left: 0;
+        width: 300px;
+        background: transparent;
+        color: black;
+        padding: 15px;
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .log-im {
+        display: none;
+    }
+
+    .login-form {
+        width: 430px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .forgot {
+        font-size: small;
+    }
+
+}
